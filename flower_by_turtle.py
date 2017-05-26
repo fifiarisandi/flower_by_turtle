@@ -3,13 +3,13 @@ ted = turtle.Turtle()
 
 def draw_center():
 	ted.pensize(2)
-	ted.color("yellow")
+	ted.color("black")
 	for angle in range(0,360,30):
 		ted.seth(angle)
 		ted.circle(20)
 
 def draw_petal1():
-	ted.color("red")
+	ted.color("fuchsia")
 	ted.pensize(2)
 	for angle in range(0,360,15):
 		ted.seth(angle)
@@ -21,7 +21,7 @@ def draw_petal1():
 
 def draw_petal2():
 	ted.home()
-	ted.color("green")
+	ted.color("darkgreen")
 	for angle in range(30,390,30):
 		ted.circle(100,90)
 		ted.penup()
@@ -51,7 +51,7 @@ def drawing_flower():
 	draw_petal1()
 	draw_petal2()
 	draw_stem()
-
+	
 	window.exitonclick()
 
 drawing_flower()
