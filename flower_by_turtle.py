@@ -35,6 +35,13 @@ def draw_petal2():
 		ted.seth(angle)
 		ted.pendown()
 
+def draw_stem():
+	ted.home()
+	ted.color("brown")
+	ted.pensize(3)
+	ted.right(90)
+	ted.fd(300)
+
 
 def drawing_flower():
 	window = turtle.Screen()
@@ -43,6 +50,7 @@ def drawing_flower():
 	draw_center()
 	draw_petal1()
 	draw_petal2()
+	draw_stem()
 
 	window.exitonclick()
 
