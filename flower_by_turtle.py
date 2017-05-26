@@ -19,6 +19,22 @@ def draw_petal1():
 		ted.left(120)
 		ted.fd(100)
 
+def draw_petal2():
+	ted.home()
+	ted.color("green")
+	for angle in range(30,390,30):
+		ted.circle(100,90)
+		ted.penup()
+		ted.home()
+		ted.seth(angle)
+		ted.pendown()
+	for angle in range(30,390,30):
+		ted.circle(-100,90)
+		ted.penup()
+		ted.home()
+		ted.seth(angle)
+		ted.pendown()
+
 
 def drawing_flower():
 	window = turtle.Screen()
@@ -26,6 +42,7 @@ def drawing_flower():
 	ted.speed(10)
 	draw_center()
 	draw_petal1()
+	draw_petal2()
 
 	window.exitonclick()
 
